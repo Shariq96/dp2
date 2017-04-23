@@ -17,13 +17,17 @@ public class Mainer {
     
     
    public static void main(String[] args) {
-    //   Scanner inp = new Scanner(System.in);
+      Scanner inp = new Scanner(System.in);
 CentralHub stock = new CentralHub();
 stock.showMenu();
-       
+      String order; 
 while(true)
 {
-String order = "6";//inp.next();      
+    if (inp.hasNext()) {
+         order = inp.next(); 
+    }
+    else 
+        order = "6";
 stock.orderPlace(order);
     if (stock.flag == false) {
         

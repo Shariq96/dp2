@@ -23,8 +23,8 @@ stock.showMenu();
       String order; 
 while(true)
 {
-    if (inp.hasNext()) {
-         order = inp.next(); 
+    if (inp.hasNextLine()) {
+         order = inp.nextLine(); 
     }
     else 
         order = "6";
